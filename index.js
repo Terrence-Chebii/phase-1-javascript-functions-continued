@@ -9,10 +9,9 @@ function mondayWork(activity2 = "go to the office"){
 }
 console.log(mondayWork())
 
-function wrapAdjective(special = 'You are'){
-    const innerFunction = function(place = "Moringa"){
-        return `${special} ${place}`
+function wrapAdjective(flair = '*'){
+    return function(special = 'a hard worker'){
+        return `You are ${flair}${special}${flair}!`
     }
-    return innerFunction()
 }
 console.log(wrapAdjective())
